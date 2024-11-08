@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardSekolah"
+        app:cardCornerRadius="25dp"
+        >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imgSekolah"
+                android:src="@drawable/banuhampu"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Sekolah"
+                android:layout_toRightOf="@+id/imgSekolah"
+                android:layout_marginLeft="10sp"
+                android:textStyle="bold"
+                android:id="@+id/txtNamaSkolah"
+                />
+
+            <TextView
+                android:id="@+id/txtNoTelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Telp"
+                android:layout_toRightOf="@+id/imgSekolah"
+                android:layout_marginLeft="10sp"
+                android:layout_below="@+id/txtNamaSkolah"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
